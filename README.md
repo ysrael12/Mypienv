@@ -1,20 +1,20 @@
 # Mypienv
 
-Este repositório reúne configurações, extensões e skills para uso com agentes de IA em ambientes de desenvolvimento. A estrutura foi organizada para servir como base de prompts, regras e ferramentas reutilizáveis para agentes e integrações de produtividade.
+This repository brings together configurations, extensions, and skills for AI agents in software development environments. The structure is organized as a reusable knowledge base for prompts, rules, and productivity-oriented tooling.
 
-## Visão geral
+## Overview
 
-O workspace contém um diretório principal chamado `agent/`, que centraliza:
+The workspace contains a main directory called `agent/`, which centralizes:
 
-- `AGENTS.md`: guia e instruções para agentes
-- `mcp.json`: configuração de servidores MCP (Model Context Protocol)
-- `settings.json`: ajustes do ambiente/agent
-- `extensions/`: extensões e utilitários auxiliares
-- `skills/`: pacotes de conhecimento e regras especializadas por área
+- `AGENTS.md`: guidance and instructions for agents
+- `mcp.json`: configuration for MCP servers (Model Context Protocol)
+- `settings.json`: environment and agent configuration
+- `extensions/`: helper extensions and utilities
+- `skills/`: specialized knowledge packs and best-practice rules by domain
 
-A ideia é permitir que diferentes agentes e ferramentas tenham acesso a padrões, diretrizes e conhecimentos bem estruturados.
+The goal is to give different agents and tools access to consistent standards, guidance, and structured domain knowledge.
 
-## Estrutura do repositório
+## Repository structure
 
 ```text
 Mypienv/
@@ -49,55 +49,55 @@ Mypienv/
 │       └── ui-ux-pro-max/
 ```
 
-## O que está presente em `agent/skills`
+## What is included in `agent/skills`
 
-A pasta `skills` contém diversos conjuntos de regras e documentação para áreas como:
+The `skills` folder contains several sets of rules and documentation covering areas such as:
 
-- backend e APIs com `axum`
-- design e branding
-- arquitetura de software e padrões
-- TypeScript, React e Next.js
-- desenvolvimento Python
+- backend and APIs with `axum`
+- design and branding
+- software architecture and patterns
+- TypeScript, React, and Next.js
+- Python development
 - Rust
-- UI/UX, shadcn e styling
-- apresentações e materiais visuais
+- UI/UX, shadcn, and styling
+- presentation and visual content design
 
-Esses pacotes funcionam como conhecimento especializado que pode ser usado por agentes para:
+These packages act as specialized knowledge that agents can use to:
 
-- revisar código
-- sugerir melhorias estruturais
-- aplicar boas práticas por contexto
-- facilitar a criação de soluções consistentes e alinhadas ao padrão do projeto
+- review code
+- suggest structural improvements
+- apply best practices in context
+- support the creation of consistent, high-quality solutions
 
-## Como usar
+## How to use it
 
-1. Abra este workspace em um ambiente com suporte a agentes de IA.
-2. Configure o agente para ler os arquivos em `agent/`.
-3. Use os arquivos `AGENTS.md`, `mcp.json` e `settings.json` como base de contexto.
-4. Consulte o diretório `skills/` conforme a área em que o agente deve operar.
+1. Open this workspace in an environment that supports AI agents.
+2. Configure the agent to read the files in `agent/`.
+3. Use `AGENTS.md`, `mcp.json`, and `settings.json` as the base context.
+4. Consult the `skills/` directory based on the area in which the agent should operate.
 
-## Exemplo de uso
+## Example use cases
 
-Um agente pode ser instruído a:
+An agent can be instructed to:
 
-- revisar código com regras de React
-- validar implementações em Rust com `rust-skills`
-- orientar desenvolvimento front-end com `shadcn` e `ui-styling`
-- usar padrões de design e UX em projetos de interface
+- review code using React best practices
+- validate Rust implementations with `rust-skills`
+- guide front-end development using `shadcn` and `ui-styling`
+- apply UI/UX standards in interface projects
 
-## Observações
+## Notes
 
-Este repositório não é uma aplicação de execução direta, e sim um repositório de conhecimento e configuração para agentes de IA. Ele é mais útil quando conectado a ferramentas de desenvolvimento e ao contexto do projeto em que será utilizado.
+This repository is not a standalone application; it is primarily a knowledge and configuration repository for AI agents. It is most useful when connected to a development environment and the project context where it will be used.
 
-## Contribuição
+## Contributing
 
-Para ampliar o repositório, você pode:
+To expand the repository, you can:
 
-- adicionar novas skills em `agent/skills/`
-- ajustar `AGENTS.md` para refletir regras globais
-- atualizar `settings.json` e `mcp.json` conforme o ambiente
-- incluir extensões úteis em `agent/extensions/`
+- add new skills in `agent/skills/`
+- update `AGENTS.md` to reflect global rules
+- adjust `settings.json` and `mcp.json` as needed for the environment
+- include useful extensions in `agent/extensions/`
 
-## Licença
+## License
 
-Consulte os arquivos específicos de cada skill ou projeto para verificar as licenças aplicáveis, caso existam dentro de subdiretórios individuais.
+Check the specific files or subprojects for licensing details, where applicable.
