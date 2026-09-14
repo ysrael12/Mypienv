@@ -1,0 +1,19 @@
+{
+  "settings": {
+    "toolPrefix": "server",
+    "idleTimeout": 10,
+    "hostConfigDiscovery": "off"
+  },
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"],
+      "lifecycle": "lazy"
+    },
+    "figma": {
+      "url": "https://mcp.figma.com/mcp",
+      "lifecycle": "lazy",
+      "auth": "oauth"
+    }
+  }
+}

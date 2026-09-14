@@ -1,0 +1,12 @@
+# runtime / secrets
+agent/auth.json
+agent/models-store.json
+agent/sessions/
+agent/memory/
+agent/mcp-cache.json
+agent/mcp-npx-cache.json
+agent/npm/
+
+# editor / OS noise
+.DS_Store
+*.log
